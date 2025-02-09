@@ -1,6 +1,6 @@
 # Trí Tuệ Nhân Tạo Ứng Dụng - Đại Học Văn Lang
 ## 1. Giới thiệu
-Đây là những bài tập về môn học Trí Tuệ Nhân Tạo Ứng Dụng - Chuyên ngành Trí Tuệ Nhân Tạo - Trường ĐH Văn Lang với chủ đề: Thiết kế một website cơ bản sử dụng Thuật toán tìm kiếm A* để tìm kiếm đường đi ngắn nhất của lộ trình du lịch tại Thành phố Hồ Chí Minh.
+Đây là đồ án cuối kì môn học Trí Tuệ Nhân Tạo Ứng Dụng - Chuyên ngành Trí Tuệ Nhân Tạo - Trường ĐH Văn Lang với chủ đề: Thiết kế một website cơ bản sử dụng Thuật toán tìm kiếm A* để tìm kiếm đường đi ngắn nhất của lộ trình du lịch tại Thành phố Hồ Chí Minh.
 
 ## 2. Dataset
 Dữ liệu của bài tập được lấy từ Google Map, các trang báo du lịch tại Thành phố Hồ Chí Minh.
@@ -13,7 +13,7 @@ Xin gửi lời cảm ơn chân thành đến:
 
 # Applied Artificial Intelligence - Van Lang University
 ## 1. Introduction
-These are exercises on the subject of Applied Artificial Intelligence - Artificial Intelligence Major - Van Lang University with the topic: Design a basic website using the A* search algorithm to find the shortest path of a tourist route in Ho Chi Minh City.
+This is the final project of the Applied Artificial Intelligence course - Artificial Intelligence major - Van Lang University with the topic: Design a basic website using the A* search algorithm to find the shortest path of a tourist route in Ho Chi Minh City.
 
 ## 2. Dataset
 The exercise data is taken from Google Map, travel newspapers in Ho Chi Minh City.
