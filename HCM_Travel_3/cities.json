@@ -1,0 +1,174 @@
+{
+    "quan1": {
+        "name": "Quận 1",
+        "coords": [10.7756, 106.7019],
+        "connections": ["quan3", "quan4", "quan5", "binhthanh"],
+        "distances": {
+            "quan3": 3.5,
+            "quan4": 2.8,
+            "quan5": 4.2,
+            "binhthanh": 5.1
+        },
+        "attractions": ["Nhà thờ Đức Bà", "Dinh Độc Lập"],
+        "foods": ["Phở Hiền 1985: 269A Nguyễn Trãi, phường Nguyễn Cư Trinh, quận 1, TP. HCM", "Hủ tiếu Thanh Xuân: 62 Tôn Thất Thiệp, phường Bến Nghé, quận 1, TP.HCM"],
+        "cultural_score": 9,
+        "nature_score": 2,
+        "food_score": 7
+    },
+    "quan3": {
+        "name": "Quận 3",
+        "coords": [10.7841, 106.6841],
+        "connections": ["quan1", "tanbinh", "phunhuan"],
+        "distances": {
+            "quan1": 3.5,
+            "tanbinh": 4.8,
+            "phunhuan": 3.2
+        },
+        "attractions": ["Hồ Con Rùa", "Nhà thờ Tân Định"],
+        "foods": ["Canh bún Nam Kỳ Khởi Nghĩa: Số 153 đường Nam Kỳ Khởi Nghĩa, Phường 6, Quận 3, TP.HCM", "Lẩu Thái Food House: Số 171 đường Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, TP.HCM"],
+        "cultural_score": 6,
+        "nature_score": 6,
+        "food_score": 6
+    },
+    "quan4": {
+        "name": "Quận 4",
+        "coords": [10.7578, 106.7040],
+        "connections": ["quan1", "quan7"],
+        "distances": {
+            "quan1": 2.8,
+            "quan7": 5.6
+        },
+        "attractions": ["Bảo Tàng Hồ Chí Minh", "Chợ Xóm Chiếu", "Công viên Hương Phú", "Bến Nhà Rồng"],
+        "foods": ["Bánh canh cua Dì Bình: 28 Xóm Chiếu, Phường 13, Quận 4, TP.HCM", "Mì ốc hến Dì Lan: 20/23 Nguyễn Trường Tộ, Phường 12, Quận 4, TP.HCM"],
+        "cultural_score": 7,
+        "nature_score": 6,
+        "food_score": 5
+    },
+    "quan5": {
+        "name": "Quận 5",
+        "coords": [10.7528, 106.6585],
+        "connections": ["quan1", "binhtan"],
+        "distances": {
+            "quan1": 4.2,
+            "binhtan": 6.7
+        },
+        "attractions": ["Chợ Lớn", "Phố Người Hoa", "Chợ Kim Biên"],
+        "foods": ["Thiêm Huy Mì Gia: 455 đường Nguyễn Trãi, phường 7, quận 5, TP.HCM", "Há Cảo Kiều Ký: 43 Lão Tử, phường 11, quận 5, TP. HCM"],
+        "cultural_score": 6,
+        "nature_score": 5,
+        "food_score": 7
+    },
+    "quan7": {
+        "name": "Quận 7",
+        "coords": [10.7379, 106.7324],
+        "connections": ["quan4", "nhabe"],
+        "distances": {
+            "quan4": 5.6,
+            "nhabe": 7.2
+        },
+        "attractions": ["Phú Mỹ Hưng", "RMIT", "Crescent Mall", "Công viên Hương Tràm"],
+        "foods": ["Cơm xá xíu Vĩnh Tâm: 649 Trần Xuân Soạn, phường Tân Hưng, quận 7, TPHCM", "Sushi 88: 44 - 46 Đường số 14, Khu đô thị Him Lam, Quận 7, TP.HCM"],
+        "cultural_score": 6,
+        "nature_score": 7,
+        "food_score": 4
+    },
+    "binhtan": {
+        "name": "Bình Tân",
+        "coords": [10.7652, 106.6027],
+        "connections": ["quan5", "tanphu"],
+        "distances": {
+            "quan5": 6.7,
+            "tanphu": 4.3
+        },
+        "attractions": ["Aeon Mall", "Công viên Làng Be", "Chợ Bình Tây"],
+        "foods": ["Quán Ăn Long Ký: 124 Đ. Số 1, Bình Trị Đông B, Bình Tân, TP.HCM", "Cơm Tấm Long Xuyên Hải Thuý: 133 Đường Số 29, Bình Trị Đông B, Bình Tân, TP.HCM"],
+        "cultural_score": 6,
+        "nature_score": 5,
+        "food_score": 7
+    },
+    "tanbinh": {
+        "name": "Tân Bình",
+        "coords": [10.8015, 106.6521],
+        "connections": ["quan3", "phunhuan", "tanphu"],
+        "distances": {
+            "quan3": 4.8,
+            "phunhuan": 3.9,
+            "tanphu": 3.4
+        },
+        "attractions": ["Sân bay Tân Sơn Nhất", "Công viên Hoàng Văn Thụ", "Chợ Tân Bình"],
+        "foods": ["Lẩu dê Lâm Ký: 47 Nguyễn Thị Nhỏ, Phường 9, Tân Bình, TP.HCM", "Cơm niêu Thiên Lý: 134C Hoàng Hoa Thám, Phường 12, Tân Bình, TP.HCM"],
+        "cultural_score": 6,
+        "nature_score": 6,
+        "food_score": 7
+    },
+    "phunhuan": {
+        "name": "Phú Nhuận",    
+        "coords": [10.7989, 106.6802],
+        "connections": ["quan3", "tanbinh", "binhthanh"],
+        "distances": {
+            "quan3": 3.2,
+            "tanbinh": 3.9,
+            "binhthanh": 4.5
+        },
+        "attractions": ["Nhà thờ Phú Nhuận", "Chợ Phú Nhuận", "Công viên Gia Định"],
+        "foods": ["Cơm tấm Ba Ghiền: 84 Đặng Văn Ngữ, phường 10, quận Phú Nhuận, TP.HCM", "Bánh canh chả cá Phan Rang: 129/1 Hoàng Văn Thụ, phường 8, quận Phú Nhuận, TP.HCM"],
+        "cultural_score": 7,
+        "nature_score": 6,
+        "food_score": 5
+    },
+    "binhthanh": {
+        "name": "Bình Thạnh",
+        "coords": [10.8105, 106.7091],
+        "connections": ["phunhuan", "quan1", "thuduc"],
+        "distances": {
+            "phunhuan": 4.5,
+            "quan1": 5.1,
+            "thuduc": 8.3
+        },
+        "attractions": ["Landmark 81", "Chợ Bà Chiểu", "Công viên Văn hóa Bình Thạnh"],
+        "foods": ["Phở Thanh Đa: 61 Bình Quới, phường 27, quận Bình Thạnh, TP.HCM", "Bánh canh cua Hiền: 395 Bùi Đình Tuý, phường 14, quận Bình Thạnh, TP.HCM"],
+        "cultural_score": 7,
+        "nature_score": 7,
+        "food_score": 6
+    },
+    "tanphu": {
+        "name": "Tân Phú",
+        "coords": [10.7900, 106.6281],
+        "connections": ["tanbinh", "binhtan"],
+        "distances": {
+            "tanbinh": 3.4,
+            "binhtan": 4.3
+        },
+        "attractions": ["Đầm Sen", "Chợ Tân Phú", "Công viên Tân Phú"],
+        "foods": ["Bún Mắm Cô Ba: 264 Hòa Bình, Hiệp Tân, Quận Tân Phú, TP.HCM", "Món quảng Dì Bảy: 20 Đường số 41, Phường Phú Thọ Hoà, Quận Tân Phú, Thành phố Hồ Chí Minh"],
+        "cultural_score": 6,
+        "nature_score": 6,
+        "food_score": 6
+    },
+    "thuduc": {
+        "name": "Thủ Đức",
+        "coords": [10.8558, 106.7422],
+        "connections": ["binhthanh"],
+        "distances": {
+            "binhthanh": 8.3
+        },
+        "attractions": ["Khu Công nghệ cao", "Đại học Quốc gia", "Suối Tiên"],
+        "foods": ["Cơm Niêu Đồng Tre:  27 Đường Thống Nhất, Phường Bình Thọ, TP Thủ Đức, TP.HCM", "Buffet Béo: 34 Đường Thống Nhất, Phường Bình Thọ, TP Thủ Đức, TP.HCM"],
+        "cultural_score": 8,
+        "nature_score": 6,
+        "food_score": 8
+    },
+    "nhabe": {
+        "name": "Nhà Bè",
+        "coords": [10.6946, 106.7473],
+        "connections": ["quan7"],
+        "distances": {
+            "quan7": 7.2
+        },
+        "attractions": ["Cảng Nhà Bè", "Chợ nổi", "Khu du lịch Láng Le"],
+        "foods": ["Nhà hàng Bên Sông:  6/8 Nguyễn Hữu Thọ, Xã Phước Kiển, huyện Nhà Bè, TP.HCM", "Nhà Bè Garden: 106/7 Huỳnh Tấn Phát, Khu phố 5, huyện Nhà Bè, TP.HCM"],
+        "cultural_score": 6,
+        "nature_score": 8,
+        "food_score": 7
+    }
+}

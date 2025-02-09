@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bản Đồ Du Lịch Thành Phố Hồ Chí Minh</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <!-- Leaflet Routing Machine CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Phần controls bên trái -->
+        <div class="controls">
+            <h2><i class="fas fa-map-marked-alt"></i> Khám phá TP.HCM</h2>
+            
+            <div class="form-group">
+                <label for="start">
+                    <i class="fas fa-map-marker-alt"></i> Điểm xuất phát:
+                </label>
+                <select id="start"></select>
+            </div>
+            
+            <div class="form-group">
+                <label for="end">
+                    <i class="fas fa-map-marker-alt"></i> Điểm đến:
+                </label>
+                <select id="end"></select>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-bus"></i> Phương tiện di chuyển:</label>
+                <div class="transport-options">
+                    <div class="transport-option" data-transport="motorbike">
+                        <i class="fas fa-motorcycle"></i>
+                        <span>Xe máy</span>
+                    </div>
+                    <div class="transport-option" data-transport="car">
+                        <i class="fas fa-car"></i>
+                        <span>Ô tô</span>
+                    </div>
+                    <div class="transport-option" data-transport="bus">
+                        <i class="fas fa-bus"></i>
+                        <span>Xe buýt</span>
+                    </div>
+                    <div class="transport-option" data-transport="taxi">
+                        <i class="fas fa-taxi"></i>
+                        <span>Taxi</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-heart"></i> Sở thích:</label>
+                <div class="travel-preferences">
+                    <div class="preference-option" data-preference="cultural">
+                        <i class="fas fa-landmark"></i>
+                        <span>Văn hóa - Lịch sử</span>
+                    </div>
+                    <div class="preference-option" data-preference="nature">
+                        <i class="fas fa-tree"></i>
+                        <span>Công viên - Giải trí</span>
+                    </div>
+                    <div class="preference-option" data-preference="food">
+                        <i class="fas fa-utensils"></i>
+                        <span>Ẩm thực</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button onclick="findPath()">
+                <i class="fas fa-route"></i>
+                Tìm Đường
+            </button>
+            
+            <!-- Phần thống kê -->
+            <div id="stats" class="route-stats"></div>
+        </div>
+
+        <!-- Phần content bên phải -->
+        <div class="right-content">
+            <!-- Bản đồ -->
+            <div id="map"></div>
+            
+            <!-- Lộ trình -->
+            <div class="route-container">
+                <div class="route-header">
+                    <h3><i class="fas fa-route"></i> Lộ Trình Du Lịch</h3>
+                </div>
+                <div id="result" class="timeline-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading overlay -->
+    <div class="loading" id="loading">
+        <div class="loading-content">
+            <i class="fas fa-spinner fa-spin"></i>
+            <span>Đang tìm đường...</span>
+        </div>
+    </div>
+
+    <!-- Cities data từ Flask -->
+    <script>
+        const cities = {{ cities|tojson|safe }};
+    </script>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Leaflet Routing Machine JS -->
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <!-- Polyline encoded for OSRM -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.encoded/0.0.9/Polyline.encoded.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
