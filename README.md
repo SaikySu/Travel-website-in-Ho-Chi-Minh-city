@@ -4,7 +4,7 @@ This is the final project of Applied Artificial Intelligence. The topic is: Buil
 
 ## Illustration
 <p align="center">
-  <img src="https://github.com/SaikySu/Travel-website-in-Ho-Chi-Minh-city/blob/main/illustration/Example.png" width="400"><br/>
+  <img src="https://github.com/SaikySu/Travel-website-in-Ho-Chi-Minh-city/blob/main/illustration/Example.png" width="800"><br/>
   <i>Sample results</i>
 </p>
 
