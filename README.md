@@ -1,6 +1,6 @@
 # Recognize Vehicles and Human Face by YOLOv8
 ## Introduction
-This is the final project of Applied Artificial Intelligence. The topic is: Building a tourism website in Ho Chi Minh City using [A* Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to find the optimal route based on user preferences.
+This is the final project of Applied Artificial Intelligence - Major in Artificial Intelligence - Van Lang University. The topic is: Building a tourism website in Ho Chi Minh City using [A* Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to find the optimal route based on user preferences.
 
 ## Illustration
 <p align="center">
