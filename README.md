@@ -1,25 +1,59 @@
-# Trí Tuệ Nhân Tạo Ứng Dụng - Đại Học Văn Lang
-## 1. Giới thiệu
-Đây là đồ án cuối kì môn học Trí Tuệ Nhân Tạo Ứng Dụng - Chuyên ngành Trí Tuệ Nhân Tạo - Trường ĐH Văn Lang với chủ đề: Thiết kế một website cơ bản sử dụng Thuật toán tìm kiếm A* để tìm kiếm đường đi ngắn nhất của lộ trình du lịch tại Thành phố Hồ Chí Minh.
+# Recognize Vehicles and Human Face by YOLOv8
+## Introduction
+This is the final project of Applied Artificial Intelligence. The topic is: Building a tourism website in Ho Chi Minh City using [A* Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to find the optimal route based on user preferences.
 
-## 2. Dataset
-Dữ liệu của bài tập được lấy từ Google Map, các trang báo du lịch tại Thành phố Hồ Chí Minh.
+## Illustration
+<p align="center">
+  <img src="https://github.com/SaikySu/Travel-website-in-Ho-Chi-Minh-city/blob/main/illustration/Example.png" width="400">
+  <i>Sample results</i>
+</p>
 
-## 3. Lời cảm ơn:
-Xin gửi lời cảm ơn chân thành đến:
- - ThS.Phan Hồ viết Trường, Khoa Công Nghệ Thông Tin, Trường ĐH Văn Lang 
- 
-Đã hỗ trợ và đồng hành trong suốt quá trình học. 
+## How to use
+1. Download the source code in the repository.
+2. Install all requirements libraries
+3. Run this code in: 
 
-# Applied Artificial Intelligence - Van Lang University
-## 1. Introduction
-This is the final project of the Applied Artificial Intelligence course - Artificial Intelligence major - Van Lang University with the topic: Design a basic website using the A* search algorithm to find the shortest path of a tourist route in Ho Chi Minh City.
+```python
+    python app.py
+```
 
-## 2. Dataset
-The exercise data is taken from Google Map, travel newspapers in Ho Chi Minh City.
+## Features
+**Map display**: Use Leaflet to show the distance traveled in real time.
 
-## 3. Acknowledgements:
-I would like to express my sincere thanks to:
-- MSc. Phan Ho Viet Truong, Faculty of Information Technology, Van Lang University
+**Location information**: The location information will be taken from the Cities.json file to display information of each location.
 
-For supporting and accompanying throughout the learning process.
+**A* algorithm**: The A* algorithm will search for the shortest routes depending on the user's choice and the associated cost
+
+## Mainly used libraries/software
+* Flask
+* Flask-Cors
+* React
+* Numpy
+
+## Some notes:
+* You can change the priority and distance of locations in the Cities.json file: 
+
+```json
+    "distances": {
+            "quan1": 3.5,
+            "tanbinh": 4.8,
+            "phunhuan": 3.2
+        }
+```
+```json
+        "cultural_score": 6,
+        "nature_score": 6,
+        "food_score": 6
+```
+
+* Similarly, you can change the location of the places along with the accompanying travel information: 
+
+```json
+    "name": "Quận 1",
+        "coords": [10.7756, 106.7019],
+        "connections": ["quan3", "quan4", "quan5", "binhthanh"],
+```
+```json
+    "attractions": ["Nhà thờ Đức Bà", "Dinh Độc Lập"],
+        "foods": ["Phở Hiền 1985: 269A Nguyễn Trãi, phường Nguyễn Cư Trinh, quận 1, TP. HCM", "Hủ tiếu Thanh Xuân: 62 Tôn Thất Thiệp, phường Bến Nghé, quận 1, TP.HCM"],
+```
